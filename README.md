@@ -1,77 +1,48 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Build Status](https://semaphoreci.com/api/v1/pierre-1/slowfood_api_team_3/branches/development/badge.svg)](https://semaphoreci.com/pierre-1/slowfood_api_team_3)
 
-## Netlify 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2c61fcf3-f507-4c4f-95df-2e2650ce533d/deploy-status)](https://app.netlify.com/sites/slowfood-team3/deploys)
+# The Slowfood Challenge 
+### Authors
+[Philip](https://github.com/pgaunitz)
+[Anish](https://github.com/Anish2504)  
+[Johan](https://github.com/johanbounce)  
+[Pierre](https://github.com/pierre-1)  
 
-## Semaphore 
-[![Build Status](https://semaphoreci.com/api/v1/pgaunitz/slowfood-client-team-3-2/branches/development/badge.svg)](https://semaphoreci.com/pgaunitz/slowfood-client-team-3-2) 
+## Built with
+**Front End:** React v.16.12.0 | CSS  
+**Back End:** Ruby 2.5.1 | Rails 6.0.2 
+**Testing framework:** Rspec 
+**Deployed at:** [Netlify](netlify.app/) and [Heroku](https://herokuapp.com/).
+## The code   
+This project is the backend API for our Slowfood application. The master repository for the Slowfood client side, built with React, can be found [API](https://github.com/pgaunitz/slowfood_api_team_3). [Client](https://github.com/pgaunitz/slowfood-client-team-3).
+## Getting started
+### Dependencies  
+* Yarn
+* React
+* Cypress
+* Axios
 
-## Coveralls
-[![Coverage Status](https://coveralls.io/repos/github/CraftAcademy/slowfood-client-team-3/badge.svg?branch=development)](https://coveralls.io/github/CraftAcademy/slowfood-client-team-3?branch=development)
+### Setup   
+To test this application, fork the repo to your own GitHub account and clone it to your local workspace. </br>
+*Note:* Be sure to set up backend api first (noted above), in order to fully interact with the application. 
+Install all of the dependencies:    
+```
+$ yarn install
+```  
+Start cypress and run the feature tests:  
+```
+$ yarn run cy:open
+```
+Start the backend api (if already configured) in a separate terminal (only run this command for the Rails application):
+```
+$ rails s
+```
+Start the React application and run it on your local host:
+```
+$ yarn start
+```
 
-## Available Scripts
+## License  
+[MIT-license](https://en.wikipedia.org/wiki/MIT_License)
+### Acknowledgement  
+- Material provided by [Craft Academy](https://craftacademy.se)
 
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
